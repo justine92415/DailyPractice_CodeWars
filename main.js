@@ -65,7 +65,7 @@ console.log(isSquare(0)); */
 }; */
 //#region
 
-//#region
+//#region Sum of Digits / Digital Root
 /* function digitalRoot(n) {
     const numArr = [...n.toString()];
     const total = numArr.reduce((sum, num) => {
