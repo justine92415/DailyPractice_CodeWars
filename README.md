@@ -2,6 +2,18 @@
 
 <img src="https://www.codewars.com/users/justine92415/badges/large">
 
+## 0211 練習
+
+### Roman Numerals Encoder
+
+### Find the missing letter
+
+### Highest Scoring Word
+
+### Sort the odd
+
+### Tribonacci Sequence
+
 ## 0210 練習
 
 ### Convert string to camel case
