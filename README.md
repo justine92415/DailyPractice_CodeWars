@@ -2,6 +2,18 @@
 
 <img src="https://www.codewars.com/users/justine92415/badges/large">
 
+## 0212 練習
+
+### Most frequently used words in a text
+
+### Build Tower
+
+### Product of consecutive Fib numbers
+
+### Which are in?
+
+### Valid Parentheses
+
 ## 0211 練習
 
 ### Roman Numerals Encoder

@@ -1,3 +1,129 @@
+/* *****0212***** */
+
+//#region Most frequently used words in a text
+/* function topThreeWords(text) {
+    const wordArr = text
+        .trim()
+        .replace(/^[\\']+$/, '')
+        .replace(/[,|.|#|\|/|\n]/g, '')
+        .toLowerCase()
+        .split(' ');
+    const uniqueArr = [...new Set(wordArr)].filter((letter) => letter);
+    const countArr = uniqueArr.map((word) => {
+        let count = 0;
+        wordArr.forEach((text) => {
+            if (text === word) count += 1;
+        });
+        return count;
+    });
+
+    const sortArr = [...countArr].sort((a, b) => b - a);
+
+    const topArr = sortArr
+        .map((t, i) => {
+            if (i > 2) return '';
+            let text = uniqueArr[countArr.indexOf(t)];
+
+            let index = countArr.indexOf(t);
+            countArr.splice(index, 1);
+            uniqueArr.splice(index, 1);
+            return text;
+        })
+        .filter((item) => item !== '');
+    return topArr;
+}
+topThreeWords(`In a village of La Mancha, the name of which I have no desire to call to
+mind, there lived not long since one of those gentlemen that keep a lance
+in the lance-rack, an old buckler, a lean hack, and a greyhound for
+coursing. An olla of rather more beef than mutton, a salad on most
+nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra
+on Sundays, made away with three-quarters of his income.`);
+topThreeWords('e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e');
+topThreeWords('a a a  b  c c  d d d d  e e e e e');
+topThreeWords('a a c b b');
+topThreeWords('  ...  '); */
+//#endregion
+
+//#region Build Tower
+/* function towerBuilder(nFloors) {
+    //#region My solution
+    // const towerArr = [];
+    // const center = Math.floor((2 * nFloors - 1) / 2);
+    // for (let i = 0; i < nFloors; i++) {
+    //     let str = '';
+    //     for (let j = 0; j < 2 * nFloors - 1; j++) {
+    //         if (j >= center - i && j <= center + i) {
+    //             str += '*';
+    //         } else {
+    //             str += ' ';
+    //         }
+    //     }
+    //     towerArr.push(str);
+    // }
+    // return towerArr;
+    //#endregion
+    //#region Good solution
+    return Array.from({ length: nFloors }, (item, index) => {
+        const space = ' '.repeat(nFloors - index - 1);
+        return space + '*'.repeat(2 * index + 1) + space;
+    });
+    //#endregion
+}
+
+console.log(towerBuilder(1)); */
+//#endregion
+
+//#region Product of consecutive Fib numbers
+/* function productFib(prod) {
+    // ...
+    const fibArr = [0, 1];
+    while (fibArr[fibArr.length - 1] * fibArr[fibArr.length - 2] < prod) {
+        fibArr.push(fibArr[fibArr.length - 1] + fibArr[fibArr.length - 2]);
+    }
+    console.log(fibArr);
+    return [
+        fibArr[fibArr.length - 2],
+        fibArr[fibArr.length - 1],
+        fibArr[fibArr.length - 1] * fibArr[fibArr.length - 2] === prod,
+    ];
+}
+
+console.log(productFib(4895)); */
+//#endregion
+
+//#region Which are in?
+/* function inArray(array1, array2) {
+    const matchArr = array1.reduce((empArr, word) => {
+        const isMatch = array2.some((parent) => parent.includes(word));
+        if (isMatch) {
+            empArr.push(word);
+        }
+        return empArr;
+    }, []);
+    return matchArr.sort();
+}
+
+console.log(
+    inArray(
+        ['live', 'strong', 'arp'],
+        ['lively', 'alive', 'harp', 'sharp', 'armstrong']
+    )
+); */
+//#endregion
+
+//#region Valid Parentheses
+/* function validParentheses(parens) {
+    // your code here ..
+    let newStr = parens.replaceAll('()', '');
+    if (newStr.includes('()')) {
+        return validParentheses(newStr);
+    }
+    return newStr.length ? false : true;
+}
+
+console.log(validParentheses(')')); */
+//#endregion
+
 /* *****0211***** */
 
 //#region Roman Numerals Encoder
