@@ -1,3 +1,93 @@
+/* *****0213***** */
+
+//#region Calculating with Functions
+/* function zero() {
+    if (!arguments.length) return 0;
+    else return Math.floor(eval(0 + arguments[0]));
+}
+function one() {
+    if (!arguments.length) return 1;
+    else return Math.floor(eval(1 + arguments[0]));
+}
+function two() {
+    if (!arguments.length) return 2;
+    else return Math.floor(eval(2 + arguments[0]));
+}
+function three() {
+    if (!arguments.length) return 3;
+    else return Math.floor(eval(3 + arguments[0]));
+}
+function four() {
+    if (!arguments.length) return 4;
+    else return Math.floor(eval(4 + arguments[0]));
+}
+function five() {
+    if (!arguments.length) return 5;
+    else return Math.floor(eval(5 + arguments[0]));
+}
+function six() {
+    if (!arguments.length) return 6;
+    else return Math.floor(eval(6 + arguments[0]));
+}
+function seven() {
+    if (!arguments.length) return 7;
+    else return Math.floor(eval(7 + arguments[0]));
+}
+function eight() {
+    if (!arguments.length) return 8;
+    else return Math.floor(eval(8 + arguments[0]));
+}
+function nine() {
+    if (!arguments.length) return 9;
+    else return Math.floor(eval(9 + arguments[0]));
+}
+
+function plus() {
+    return `+${arguments[0]}`;
+}
+function minus() {
+    return `-${arguments[0]}`;
+}
+function times() {
+    return `*${arguments[0]}`;
+}
+function dividedBy() {
+    return `/${arguments[0]}`;
+}
+
+console.log(eight(dividedBy(three()))); */
+//#endregion
+
+//#region First non-repeating character
+/* function firstNonRepeatingLetter(s) {
+    //#region My solution
+    // const letters = s.split('');
+    // const uniqueArr = letters.filter((letter, i, arr) => {
+    //     const copyArr = [...arr];
+    //     copyArr.splice(i, 1);
+    //     const isUnique = copyArr.some((t) => {
+    //         return t.toLowerCase() === letter.toLowerCase();
+    //     });
+    //     return !isUnique;
+    // });
+    // if (!uniqueArr.length) return '';
+    // return uniqueArr[0];
+    //#endregion
+    //#region good solution
+    // for (const i in s) {
+    //     if (s.match(new RegExp(s[i], 'gi')).length === 1) {
+    //         return s[i];
+    //     }
+    // }
+    // return '';
+    //#endregion
+}
+
+console.log(firstNonRepeatingLetter('sTreSS'));
+console.log(firstNonRepeatingLetter('stress'));
+console.log(firstNonRepeatingLetter('moonmen')); */
+//#endregion
+
 /* *****0212***** */
 
 //#region Most frequently used words in a text

@@ -2,6 +2,12 @@
 
 <img src="https://www.codewars.com/users/justine92415/badges/large">
 
+## 0213 練習
+
+### Calculating with Functions
+
+### First non-repeating character
+
 ## 0212 練習
 
 ### Most frequently used words in a text
