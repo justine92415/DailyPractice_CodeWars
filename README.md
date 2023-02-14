@@ -2,6 +2,12 @@
 
 <img src="https://www.codewars.com/users/justine92415/badges/large">
 
+## 0214
+
+### Pete, the baker
+
+### Snail
+
 ## 0213 練習
 
 ### Calculating with Functions

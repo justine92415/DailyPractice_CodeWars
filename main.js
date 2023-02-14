@@ -1,3 +1,118 @@
+/* *****0214***** */
+
+//#region Pete, the baker
+/* function cakes(recipe, available) {
+    let isHave;
+    let arr = [];
+
+    for (const key in recipe) {
+        isHave = true && available[key] >= recipe[key];
+    }
+
+    if (isHave) {
+        for (const key in recipe) {
+            arr.push(Math.floor(available[key] / recipe[key]));
+        }
+    }
+
+    if (!arr.length) return 0;
+
+    console.log(arr);
+    return Math.min(...arr);
+}
+
+console.log(
+    cakes(
+        { apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 },
+        { sugar: 500, flour: 2000, milk: 2000 }
+    )
+);
+ */
+//#endregion
+
+//#region Snail
+/* const testarray = [
+    [1, 2, 3, 1],
+    [4, 5, 6, 4],
+    [7, 8, 9, 7],
+    [7, 8, 9, 7],
+];
+
+//#region  My solution
+// var snail = function (array) {
+//     if (!array.length) return [[]];
+//     const resultArr = [];
+//     const direction = array.length % 2 === 0 ? 'rtl' : 'ltr';
+
+//     let top = 0;
+//     let bottom = array.length - 1;
+
+//     while (array.length > 0) {
+//         while (top !== bottom) {
+//             if (!top) {
+//                 resultArr.push(...array[top]);
+//                 array[top] = [];
+//                 top += 1;
+//             } else {
+//                 resultArr.push(array[top].pop());
+//                 top += 1;
+//             }
+//         }
+
+//         array = array.filter((item) => item.length > 0);
+//         top = 0;
+//         bottom = array.length - 1;
+
+//         while (bottom !== top) {
+//             if (bottom === array.length - 1) {
+//                 while (array[bottom].length > 0) {
+//                     resultArr.push(array[bottom].pop());
+//                 }
+//                 array[bottom] = [];
+//                 bottom -= 1;
+//             } else {
+//                 resultArr.push(array[bottom].shift());
+//                 bottom -= 1;
+//             }
+//         }
+
+//         array = array.filter((item) => item.length > 0);
+//         top = 0;
+//         bottom = array.length - 1;
+
+//         if (array.length === 1) {
+//             while (array[0].length > 0) {
+//                 if (direction === 'ltr') {
+//                     resultArr.push(array[0].shift());
+//                 }
+//                 resultArr.push(array[0].pop());
+//             }
+//             array = [];
+//         }
+//     }
+
+//     return resultArr;
+// };
+//#endregion
+
+//#region good solution
+// const snail = function (array) {
+//     const resultArr = [];
+//     while (array.length) {
+//         resultArr.push(...array.shift());
+//         array.map((row) => {
+//             resultArr.push(row.pop());
+//         });
+//         array.reverse().map((row) => row.reverse());
+//     }
+
+//     return resultArr;
+// };
+//#endregion
+
+console.log(snail(testarray)); */
+//#endregion
+
 /* *****0213***** */
 
 //#region Calculating with Functions
