@@ -1,5 +1,81 @@
-/* *****0214***** */
+/* *****0215***** */
 
+//#region Maximum subarray sum
+/* function maxSmaxSequence(arr) {
+    const isAllNative = arr.every((item) => item < 0);
+    if (!arr.length || isAllNative) return 0;
+    const maxSumArr = arr.reduce((empty, _, index, array) => {
+        let f =
+            empty[index - 1] > 0
+                ? array[index] + empty[index - 1]
+                : array[index];
+        empty.push(f);
+        return empty;
+    }, []);
+    return Math.max(...maxSumArr);
+}
+//  參考 https://www.youtube.com/watch?v=7J5rs56JBs8
+console.log(maxSmaxSequence([-1, -2, -3])); */
+//#endregion
+
+//#region Greed is Good
+// Three 1's => 1000 points
+// Three 6's =>  600 points
+// Three 5's =>  500 points
+// Three 4's =>  400 points
+// Three 3's =>  300 points
+// Three 2's =>  200 points
+// One   1   =>  100 points
+// One   5   =>   50 point
+/* function score(dice) {
+    //#region My solution
+    // const uniqueArr = [...new Set(dice)];
+    // return uniqueArr
+    //     .map((num) => {
+    //         let count = 0;
+    //         dice.forEach((dicNum) => {
+    //             if (dicNum === num) count++;
+    //         });
+    //         if (count >= 3 && num !== 1 && num !== 5) return num * 100;
+    //         if (count >= 3 && num === 1) {
+    //             return num * 1000 + (count - 3) * num * 100;
+    //         }
+    //         if (count >= 3 && num === 5) {
+    //             return num * 100 + (count - 3) * num * 10;
+    //         }
+    //         if (count === 6) return num * 100 * 2;
+    //         if (count < 3 && num === 1) return count * num * 100;
+    //         if (count < 3 && num === 5) return count * num * 10;
+    //         return 0;
+    //     })
+    //     .reduce((sum, num) => (sum += num), 0);
+    //#endregion
+
+    //#region good solution
+    const dc = [0, 0, 0, 0, 0]; // 1 2 3 4 5
+    const tdr = [1000, 200, 300, 400, 500];
+    const sdr = [100, 0, 0, 0, 50];
+
+    dice.forEach((num) => {
+        dc[num - 1]++;
+    });
+
+    return dc.reduce((sum, num, i) => {
+        return sum + (num >= 3 ? tdr[i] : 0) + sdr[i] * (num % 3);
+    }, 0);
+    //#endregion
+}
+
+// console.log(score([2, 3, 4, 6, 2]));
+// console.log(score([4, 4, 4, 3, 3]));
+// console.log(score([2, 4, 4, 5, 4]));
+// console.log(score([5, 1, 3, 4, 1]));
+console.log(score([2, 3, 3, 3, 3]));
+// console.log(score([2, 4, 4, 5, 4]));
+ */
+//#endregion
+
+/* *****0214***** */
 //#region Pete, the baker
 /* function cakes(recipe, available) {
     let isHave;

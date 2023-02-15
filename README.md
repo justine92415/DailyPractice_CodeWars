@@ -2,54 +2,62 @@
 
 <img src="https://www.codewars.com/users/justine92415/badges/large">
 
-## 0214
+⭕：雖然寫法爛但還是自己解出來了 | ❗：看了一些提示然後寫出來的 | ❌：想破頭也不知道怎麼解，放棄看別人怎麼解再試著自己寫寫看
 
-### Pete, the baker
+## 2023/02/15 練習 2 題
 
-### Snail
+### Maximum subarray sum (❗)
 
-## 0213 練習
+### Greed is Good (⭕)
 
-### Calculating with Functions
+## 2023/02/14 練習 2 題
 
-### First non-repeating character
+### Pete, the baker(❌)
 
-## 0212 練習
+### Snail (❌)
 
-### Most frequently used words in a text
+## 2023/02/13 練習 2 題
 
-### Build Tower
+### Calculating with Functions (⭕)
 
-### Product of consecutive Fib numbers
+### First non-repeating character (⭕)
 
-### Which are in?
+## 2023/02/12 練習 5 題
 
-### Valid Parentheses
+### Most frequently used words in a text (⭕)
 
-## 0211 練習
+### Build Tower (⭕)
 
-### Roman Numerals Encoder
+### Product of consecutive Fib numbers (⭕)
 
-### Find the missing letter
+### Which are in? (⭕)
 
-### Highest Scoring Word
+### Valid Parentheses (⭕)
 
-### Sort the odd
+## 2023/02/11 練習 5 題
 
-### Tribonacci Sequence
+### Roman Numerals Encoder (⭕)
 
-## 0210 練習
+### Find the missing letter (⭕)
 
-### Convert string to camel case
+### Highest Scoring Word (⭕)
 
-### Does my number look big in this?
+### Sort the odd (⭕)
 
-### Printer Errors
+### Tribonacci Sequence (⭕)
 
-### You're a square!
+## 2023/02/10 練習 6 題
 
-### Unique In Order
+### Convert string to camel case (⭕)
 
-### Sum of Digits / Digital Root
+### Does my number look big in this? (⭕)
+
+### Printer Errors (⭕)
+
+### You're a square! (⭕)
+
+### Unique In Order (⭕)
+
+### Sum of Digits / Digital Root (⭕)
 
 ---
