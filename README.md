@@ -4,6 +4,10 @@
 
 ⭕：雖然寫法爛但還是自己解出來了 | ❗：看了一些提示然後寫出來的 | ❌：想破頭也不知道怎麼解，放棄看別人怎麼解再試著自己寫寫看
 
+## 2023/02/16 練習 1 題
+
+### Next bigger number with the same digits (❌)
+
 ## 2023/02/15 練習 2 題
 
 ### Maximum subarray sum (❗)
@@ -12,7 +16,7 @@
 
 ## 2023/02/14 練習 2 題
 
-### Pete, the baker(❌)
+### Pete, the baker (❌)
 
 ### Snail (❌)
 

@@ -1,3 +1,48 @@
+/* *****0216***** */
+//#region Next bigger number with the same digits
+/* function nextBigger(num) {
+    const numArr = num.toString().split('');
+    let lastNum = numArr.length - 1;
+    let limitIndex;
+    for (let i = 0; i < numArr.length; i++) {
+        if (numArr[lastNum - i - 1] < numArr[lastNum - i]) {
+            limitIndex = lastNum - i - 1;
+            break;
+        }
+    }
+    const limitNumber = numArr[limitIndex];
+    const anotherArr = numArr.splice(limitIndex + 1);
+    const gtLimitIndex = anotherArr
+        .sort()
+        .findIndex((str) => +str > limitNumber);
+    let temp = numArr[numArr.length - 1];
+    numArr[numArr.length - 1] = anotherArr[gtLimitIndex];
+    anotherArr[gtLimitIndex] = temp;
+    return +numArr.concat(anotherArr).join('') > num
+        ? +numArr.concat(anotherArr).join('')
+        : -1;
+}
+
+console.log(nextBigger(34054)); // 34405
+console.log(nextBigger(631420)); // 632014
+console.log(nextBigger(2201)); // 2102
+console.log(nextBigger(46224001253)); // 46224001325
+console.log(nextBigger(531)); // 46224001325
+console.log(nextBigger(12)); // 46224001325
+
+// 2201
+// 22 0 1
+// 22 1 0
+// 2102
+
+// 34054
+// 34 0 54
+// 34 4 50
+// 34405
+
+// 46224001253
+// 46224001325 */
+//#endregion
 /* *****0215***** */
 
 //#region Maximum subarray sum
